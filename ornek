@@ -1,0 +1,14 @@
+public class ArrayDemo {
+
+    public static void main(String[] args) {
+        
+        int[] numbers = {1,2,3,4,5,23,4556,6674,442};
+        
+        System.out.println("Number of elements: " + numbers.length);
+        
+        for (int i = 0; i<numbers.length; i = i + 2) {
+            if (numbers.length % 2 != 0 && i+1 == numbers.length) {
+                System.out.println(numbers[i]);
+            } else {
+                System.out.println(numbers[i] + " " + numbers[i+1]);
+            }
